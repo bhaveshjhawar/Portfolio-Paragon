@@ -10,6 +10,7 @@ import { cssProps, media, msToNum, numToMs } from '~/utils/style';
 import { NavToggle } from './nav-toggle';
 import { ThemeToggle } from './theme-toggle';
 import { navLinks, socialLinks } from './nav-data';
+// import MySvg from './my-svg.svg';
 import config from '~/config.json';
 import styles from './navbar.module.css';
 
@@ -151,6 +152,7 @@ export const Navbar = () => {
         onClick={handleMobileNavClick}
       >
         <Monogram highlight />
+       {/*<Monogram svg={<MySvg />} />*/}
       </RouterLink>
       <NavToggle onClick={() => setMenuOpen(!menuOpen)} menuOpen={menuOpen} />
       <nav className={styles.nav}>

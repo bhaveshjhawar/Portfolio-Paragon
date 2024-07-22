@@ -30,6 +30,11 @@ export const socialLinks = [
     url: `https://www.figma.com/${config.figma}`,
     icon: 'figma',
   },
+  // {
+  //   label: 'Linked In',
+  //   url: `${config.linkedin}`,
+  //   icon: 'linkedin',
+  // },
   {
     label: 'Github',
     url: `https://github.com/${config.github}`,

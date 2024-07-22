@@ -8,8 +8,10 @@ import sliceTextureLarge from '~/assets/slice-app-large.jpg';
 import sliceTexturePlaceholder from '~/assets/slice-app-placeholder.jpg';
 import sliceTexture from '~/assets/slice-app.jpg';
 import sprTextureLarge from '~/assets/spr-lesson-builder-dark-large.jpg';
-import sprTexturePlaceholder from '~/assets/spr-lesson-builder-dark-placeholder.jpg';
-import sprTexture from '~/assets/spr-lesson-builder-dark.jpg';
+// import sprTexturePlaceholder from '~/assets/spr-lesson-builder-dark-placeholder.jpg';
+import sprTexturePlaceholder from '~/assets/Screenshot (618).png';
+// import sprTexture from '~/assets/spr-lesson-builder-dark.jpg';
+import sprTexture from '~/assets/Screenshot (618).png';
 import { Footer } from '~/components/footer';
 import { baseMeta } from '~/utils/meta';
 import { Intro } from './intro';
@@ -103,16 +105,16 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
-        buttonText="View project"
-        buttonLink="/projects/smart-sparrow"
+        title="BITYUVA | Designing the crypto in & out"
+        description="Empowering the next gen of innovators in decentralized finance."
+        buttonText="Check this out"
+        buttonLink="/"
         model={{
           type: 'laptop',
-          alt: 'Smart Sparrow lesson builder',
+          alt: 'BitYuva',
           textures: [
             {
-              srcSet: `${sprTexture} 1280w, ${sprTextureLarge} 2560w`,
+              srcSet: `${sprTexture} 1280w, ${sprTexture} 2560w`,
               placeholder: sprTexturePlaceholder,
             },
           ],
