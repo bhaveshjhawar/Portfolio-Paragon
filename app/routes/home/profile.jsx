@@ -22,17 +22,6 @@ const ProfileText = ({ visible, titleId }) => (
     <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
       <DecoderText text="Hey there" start={visible} delay={500} />
     </Heading>
-    {/*<Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Hamish, currently I live in Sydney working as a senior product designer at{' '}
-      <Link href="https://www.qwilr.com">Qwilr</Link>. My projects include UX design, UI
-      animations, and icon illustration. Being comfortable with code allows me to rapidly
-      prototype and validate experiences. If you’re interested in the tools and software I
-      use check out my <Link href="/uses">uses page</Link>.
-    </Text>
-    <Text className={styles.description} data-visible={visible} size="l" as="p">
-      In my spare time I like to practice Brazilian Jiu Jitsu, play video games.I’m always down for hearing
-      about new projects, so feel free to drop me a line.
-    </Text>*/}
 
     {/*eslint-disable-next-line react/no-unescaped-entities*/}
     <Text className={styles.description} data-visible={visible} size="l" as="p">I'm Bhavesh Jhawar, a junior frontend dev with a passion for becoming a full-stack mastermind, living in the vibrant state of [Rajasthan], [India]. When I'm not coding away, you can find me daydreaming about building the next big thing. My projects include <Link href="#">YuvCoin</Link>, a bitcoin trading platform that's not just a coin-flip, and <Link href="#">Havens Home</Link>, an ecommerce store that's a haven for online shoppers. </Text> <Text className={styles.description} data-visible={visible} size="l" as="p"> In my free time, I enjoy unwinding with a good joke (Why do programmers prefer dark mode? Because light attracts bugs) and trying to convince my friends that I'm a "junior" dev, not just a junior in age. If you're looking for someone to collaborate on a project or just want to chat about the latest web dev trends, I'm always up for a conversation. Let's grab a virtual coffee and talk tech! </Text>

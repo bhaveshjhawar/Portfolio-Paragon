@@ -1,16 +1,19 @@
-import gamestackTexture2Large from '~/assets/gamestack-list-large.jpg';
-import gamestackTexture2Placeholder from '~/assets/gamestack-list-placeholder.jpg';
-import gamestackTexture2 from '~/assets/gamestack-list.jpg';
-import gamestackTextureLarge from '~/assets/gamestack-login-large.jpg';
-import gamestackTexturePlaceholder from '~/assets/gamestack-login-placeholder.jpg';
-import gamestackTexture from '~/assets/gamestack-login.jpg';
-import sliceTextureLarge from '~/assets/slice-app-large.jpg';
-import sliceTexturePlaceholder from '~/assets/slice-app-placeholder.jpg';
-import sliceTexture from '~/assets/slice-app.jpg';
-import sprTextureLarge from '~/assets/spr-lesson-builder-dark-large.jpg';
+// import gamestackTexture2Large from '~/assets/gamestack-list-large.jpg';
+// import gamestackTexture2Placeholder from '~/assets/gamestack-list-placeholder.jpg';
+// import gamestackTexture2 from '~/assets/gamestack-list.jpg';
+// import gamestackTextureLarge from '~/assets/gamestack-login-large.jpg';
+// import gamestackTexturePlaceholder from '~/assets/gamestack-login-placeholder.jpg';
+// import gamestackTexture from '~/assets/gamestack-login.jpg';
+// import sliceTextureLarge from '~/assets/slice-app-large.jpg';
+// import sliceTexturePlaceholder from '~/assets/slice-app-placeholder.jpg';
+// import sliceTexture from '~/assets/slice-app.jpg';
+// import sprTextureLarge from '~/assets/spr-lesson-builder-dark-large.jpg';
 // import sprTexturePlaceholder from '~/assets/spr-lesson-builder-dark-placeholder.jpg';
-import sprTexturePlaceholder from '~/assets/Screenshot (618).png';
 // import sprTexture from '~/assets/spr-lesson-builder-dark.jpg';
+import sprTexturePlaceholder from '~/assets/Screenshot (618).png';
+import gamestackTexture2 from '~/assets/Havens.png';
+import meowChan from '~/assets/meowChan.png';
+import sliceTexture from '~/assets/Orion.png';
 import sprTexture from '~/assets/Screenshot (618).png';
 import { Footer } from '~/components/footer';
 import { baseMeta } from '~/utils/meta';
@@ -55,10 +58,11 @@ export const Home = () => {
   const projectOne = useRef();
   const projectTwo = useRef();
   const projectThree = useRef();
+  const projectFour = useRef();
   const details = useRef();
 
   useEffect(() => {
-    const sections = [intro, projectOne, projectTwo, projectThree, details];
+    const sections = [intro, projectOne, projectTwo, projectThree, projectFour, details];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -126,22 +130,18 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
+        title="Havenz Home: Furnishing Dreams"
+        description="Elevating home decor with a seamless online shopping experience, crafted with love"
         buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
+        buttonLink="/"
         model={{
-          type: 'phone',
+          type: 'laptop',
           alt: 'App login screen',
           textures: [
             {
-              srcSet: `${gamestackTexture} 375w, ${gamestackTextureLarge} 750w`,
-              placeholder: gamestackTexturePlaceholder,
-            },
-            {
-              srcSet: `${gamestackTexture2} 375w, ${gamestackTexture2Large} 750w`,
-              placeholder: gamestackTexture2Placeholder,
-            },
+              srcSet: `${gamestackTexture2} 375w, ${gamestackTexture2} 750w`,
+              placeholder: gamestackTexture2,
+            }
           ],
         }}
       />
@@ -150,18 +150,39 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Biomedical image collaboration"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
+        title="Orion | MLM Business Web App"
+        description="Empower your network, elevate your income."
         buttonText="View project"
-        buttonLink="/projects/slice"
+        buttonLink="/"
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
           textures: [
             {
-              srcSet: `${sliceTexture} 800w, ${sliceTextureLarge} 1920w`,
-              placeholder: sliceTexturePlaceholder,
+              srcSet: `${sliceTexture} 800w, ${sliceTexture} 1920w`,
+              placeholder: sliceTexture,
             },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-4"
+        alternate
+        sectionRef={projectFour}
+        visible={visibleSections.includes(projectFour.current)}
+        index={4}
+        title="MeowChan | Mui Styled Social Media Frontend"
+        description="A MUI styled social media frontend built with React"
+        buttonText="View website"
+        buttonLink="/"
+        model={{
+          type: 'laptop',
+          alt: 'App login screen',
+          textures: [
+            {
+              srcSet: `${meowChan} 375w, ${meowChan} 750w`,
+              placeholder: meowChan,
+            }
           ],
         }}
       />

@@ -83,11 +83,12 @@
   justify-content: center;
   height: 100%;
   width: 100%;
+  margin-right: 15%;
 }
 
 .model {
   --width: 180%;
-  --aspectRatio: 12 / 10;
+  --aspectRatio: 14 / 10;
 
   min-width: var(--width);
   aspect-ratio: var(--aspectRatio);
