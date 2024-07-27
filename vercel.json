@@ -29,8 +29,5 @@
           }
         ]
       }
-    ],
-    "analytics": {
-      "id": "YOUR_VERCEL_ANALYTICS_ID"
-    }
+    ]
   }
