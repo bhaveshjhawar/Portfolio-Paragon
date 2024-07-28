@@ -1,3 +1,8 @@
 kv_namespaces = [
   { id = "MY_KV", binding="MY_KV" }
 ]
+
+
+
+[env.dev]
+CLOUDFLARE_API_TOKEN= = "3f075638dd8c17a865053e32704ff5ee5a71d"
